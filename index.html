@@ -9,24 +9,36 @@
 <body>
 <header>
     <div class ="large-font">Lets Get Ready To Rumble!!!</div>
+    <button class="btn" id ="start_button">Start Quiz</button>
 </header> 
 
 <main>
 <div class="card-timer">
    <div class="timer text">
    <h1 class="timer-count"></h1> 
-</div>
-    <div>
+</div> 
+    
+<section class ="quesions_page" id="questions_page">    
+    <div id="ask_questions">Ask the questions</div>
         <ul>
-            <button class="btn">Start Quiz</button>
-            <button class="btn">Save</button>
-            <button class="btn">Restart</button>
-        </ul>
-    </div>    
-    <div id="score"></div>
-    <div id="questions"></div>
-    <div id="choices"></div> 
-    <div id="answers"></div>        
+            <li><button class ="choices" button" id="answer1" value="a">a.</button></li>
+            <li><button class ="choices" button" id="answer2" value="b">b.</button></li>
+            <li><button class ="choices" button" id="answer3" value="c">c.</button></li>
+            <li><button class ="choices" button" id="answer4" value="d">d.</button></li>
+        </ul> 
+    <div id="answers"></div>  
+</section>
+
+<section class="submit_page" id="submit_page">
+    <div>
+        <h2 id="finish">Done</h2>
+        <p id="final_score">Your final score:</p>
+        <p>Enter initials
+            <input id="initials">
+            <button class="btn" id="save_btn">Save</button>
+        </p>
+    </div>
+</section>
 </main>
 <script src="assets/script.js"></script>
 </body>
